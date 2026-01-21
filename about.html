@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Nyakabirizi Miracle Centre Church</title>
+
+<style>
+
+/* ===== BODY & BACKGROUND ===== */
+body.gallery-page {
+  margin:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  min-height:100vh;
+  background: linear-gradient(135deg, #0f3d2e, #0b2d4a, #000814);
+  background-size: 400% 400%;
+  animation: gradientMove 20s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientMove {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+/* ===== OVERLAY ===== */
+.gallery-overlay {
+  min-height:100vh;
+  background: rgba(0,0,0,0.55);
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* ===== NAV ===== */
+nav {
+  margin-bottom: 30px;
+}
+nav a {
+  color: #ffd700;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 600;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== HEADER ===== */
+h1 {
+  margin-bottom: 20px;
+  color: #ffe066;
+  text-align: center;
+}
+
+
+/* ===== LIGHTBOX ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  top:0; left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.5);
+  margin-bottom:10px;
+}
+.lightbox p {
+  color:#fff;
+  font-size:1rem;
+  text-align:center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top:50px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top:20px;
+  font-size:0.9rem;
+  opacity:0.85;
+  text-align:center;
+}
+
+/* ===== FLOATING SOCIAL BUTTONS ===== */
+.floating-social {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.float-btn {
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  color:white;
+  font-size:24px;
+  text-decoration:none;
+  background:#444;
+  box-shadow:0 2px 10px rgba(0,0,0,0.5);
+  transition:0.3s;
+}
+.float-btn.youtube {background:#FF0000;}
+.float-btn.facebook {background:#3b5998;}
+.float-btn:hover {
+  transform: scale(1.15);
+  box-shadow:0 4px 20px rgba(255,255,255,0.6);
+}
+</style>
+</head>
+
+<body class="gallery-page">
+
+<!-- FLOATING SOCIAL BUTTONS -->
+<div class="floating-social">
+  <a href="https://www.youtube.com/@nyakabirizimiraclecentre2487" target="_blank" class="float-btn youtube" aria-label="YouTube">▶</a>
+  <a href="https://facebook.com/groups/706963367473477/" target="_blank" class="float-btn facebook" aria-label="Facebook">f</a>
+</div>
+
+<div class="gallery-overlay">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="events.html">Testimonial</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+	<a href="prayer_submit.html">Prayer Wall</a>
+  </nav>
+
+  <h1></h1
+</script>
+</section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us – Nyakabirizi Miracle Centre Church</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== GENERAL ===== */
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#002b40;
+  color:white;
+}
+
+/* ===== HERO ===== */
+.hero{
+  background:linear-gradient(
+    rgba(0,50,80,0.75),
+    rgba(0,0,0,0.9)
+  );
+  padding:90px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:16px;
+  opacity:0.9;
+}
+
+/* ===== SCRIPTURE BOX ===== */
+.scripture-box{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.2);
+  padding:20px;
+  margin:25px auto;
+  width:85%;
+  border-radius:10px;
+  text-align:center;
+  font-style:italic;
+}
+
+/* ===== ABOUT CONTENT ===== */
+.about{
+  padding:25px;
+}
+
+.card{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.2);
+  margin-bottom:20px;
+  padding:18px;
+  border-radius:10px;
+}
+
+.card h2{
+  margin:0 0 8px 0;
+  color:#4ef7ff;
+}
+
+/* ===== BUTTONS ===== */
+.button-area{
+  text-align:center;
+  margin:30px 0;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 20px;
+  margin:8px;
+  border-radius:30px;
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.call-btn{
+  background:#0066ff;
+}
+
+.map-btn{
+  background:#00b86b;
+}
+
+.call-btn:hover{
+  background:#0047b3;
+}
+
+.map-btn:hover{
+  background:#008f50;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  text-align:center;
+  opacity:0.7;
+  padding:15px;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>About Our Church</h1>
+  <p>A Christ-centered ministry restoring broken hearts, preaching good tidings and raising believers</p>
+</section>
+
+<!-- SCRIPTURE -->
+<div class="scripture-box" id="scriptureBox">
+  Loading scripture…
+</div>
+
+<!-- ABOUT CONTENT -->
+<section class="about">
+
+  <div class="card">
+    <h2>Who We Are</h2>
+    <p>
+      Nyakabirizi Miracle Centre Church is found in the heart of Uganda and 
+	  God has cling the unique Mission of Extending Good Tidings to the meek
+	 and restoring the broken hearted upon His Servants in this place.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Our Mission</h2>
+    <p>
+      To proclaim the Good Tidings with power, nurture believers through the Word of God,
+      and impact our community with love, Honor and truth.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Our Leadership</h2>
+    <p>
+      <strong>Pr. Peter Musoke</strong> & <strong>Pr. Marion Musoke</strong><br>
+      Passionate servants of God committed to prayer, teaching the Word,
+      strengthening families, and advancing God’s Kingdom.
+    </p>
+  </div>
+
+</section>
+
+<!-- ACTION BUTTONS -->
+<div class="button-area">
+  <a class="btn call-btn" href="tel:+256784059781">
+    Call Church Office
+  </a>
+
+  <a class="btn map-btn"
+     href="https://www.google.com/maps?q=Nyakabirizi+Miracle+Centre+Church+Bushenyi"
+     target="_blank" rel="noopener">
+    Find Us on Maps
+  </a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+   
+</div>
+
+<!-- SCRIPTURE SCRIPT -->
+<script>
+const scriptures = [
+  "Psalm 37:4 — Delight yourself also in the LORD, and He shall give you the desires of your heart",
+  "Revelation 3:8 — I know thy works: behold, I have set before thee an open door, and no man can shut it: for thou hast a little strength, and hast kept my word, and hast not denied my name.",
+  "Hebrews 13:8 — Jesus Christ is the same yesterday, today and forever.",
+  "Romans 8:1 — There is therefore now no condemnation to them which are in Christ Jesus, who walk not after the flesh, but after the Spirit.",
+  "Luke 2:10 — And the angel said unto them, Fear not: for, behold, I bring you good tidings of great joy, which shall be to all people."
+];
+
+function showScripture(){
+  const box = document.getElementById("scriptureBox");
+  const random = scriptures[Math.floor(Math.random()*scriptures.length)];
+  box.textContent = random;
+}
+
+
+showScripture();
+setInterval(showScripture, 9000);
+</script>
+<section class="testimonials-display">
+  <h2>What Our Members Say</h2>
+  <div class="testimonial-grid" id="testimonialGrid"></div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const grid = document.getElementById("testimonialGrid");
+
+  fetch("assets/data/testimonials.json")
+    .then(res => res.json())
+    .then(data => {
+      data.testimonials.forEach(t => {
+        const div = document.createElement("div");
+        div.className = "testimonial-card";
+        div.innerHTML = `
+          <img src="${t.profilePic || 'assets/images/default-profile.png'}" alt="${t.name}">
+          <h3>${t.name}</h3>
+          <p>"${t.message}"</p>
+        `;
+        grid.appendChild(div);
+      });
+    })
+    .catch(err => console.error("Failed to load testimonials:", err));
+});
+</script>
+
+
+<style>
+.testimonials-display {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonials-display h2 {
+  color: #ffd700;
+  margin-bottom: 30px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.testimonial-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+  margin: 5px 0;
+  color: #ffd700;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  opacity: 0.9;
+}
+</style>
+</body>
+</html>
+<section class="testimonial-form-section">
+  <div class="testimonial-form-container">
+    <h2>Share Your Experience at This Place</h2>
+    <p>Your story inspires others; Please submit it below Thus Impacting the world.</p>
+
+    <form 
+      action="https://formspree.io/f/mreegvvq" 
+      method="POST" 
+      enctype="multipart/form-data"
+    >
+      <!-- Hidden fields for Formspree -->
+      <input type="hidden" name="_subject" value="New Testimonial Submission">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <!-- User inputs -->
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Your Testimonial" required></textarea>
+      <label for="profilePic">Add a profile Picture (optional)</label>
+      <input type="file" name="profilePic" id="profilePic" accept="image/*">
+
+      <button type="submit" class="btn">Submit Testimonial</button>
+    </form>
+  </div>
+</section>
+
+<style>
+.testimonial-form-section {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0b2d4a, #0f3d2e);
+  color: #fff;
+  text-align: center;
+}
+
+.testimonial-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.testimonial-form-container h2 {
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.testimonial-form-container p {
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.testimonial-form-container input,
+.testimonial-form-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.testimonial-form-container input:focus,
+.testimonial-form-container textarea:focus {
+  border: 2px solid #ffd700;
+  background: rgba(255,255,255,0.15);
+}
+
+.testimonial-form-container label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.testimonial-form-container button.btn {
+  padding: 12px 25px;
+  background: #ffd700;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.testimonial-form-container button.btn:hover {
+  background: #e6c200;
+}
+</style>
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 Nyakabirizi Miracle Centre Church
+Bushenyi, Uganda
+</div>

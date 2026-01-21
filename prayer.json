@@ -1,0 +1,22 @@
+{
+  "prayers": [
+    {
+      "name": "Kutesa Emma",
+      "message": "Heavenly Father, please bless my family with good health and protection from all harm.",
+      "profilePic": "assets/images/sample1.jpg",
+      "approved": true
+    },
+    {
+      "name": "Kusiima Grace",
+      "message": "Lord, guide me in my career decisions and open doors according to Your will.",
+      "profilePic": "assets/images/sample2.jpg",
+      "approved": true
+    },
+    {
+      "name": "John Doe",
+      "message": "Father, pray for peace in our community and that Your love touches everyone around us.",
+      "profilePic": "",
+      "approved": false
+    }
+  ]
+}

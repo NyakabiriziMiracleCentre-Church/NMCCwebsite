@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+      "title": "Sunday Worship Service",
+      "date": "2026-01-19T09:00:00",
+      "location": "Nyakabirizi Miracle Centre Church",
+      "description": "Main Sunday worship"
+    },
+    {
+      "title": "Youth Fellowship",
+      "date": "2026-01-18T15:00:00",
+      "location": "Church Hall",
+      "description": "Youth gathering and prayers"
+    }
+  ]
+}

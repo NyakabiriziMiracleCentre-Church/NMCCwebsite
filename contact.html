@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Nyakabirizi Miracle Centre Church</title>
+
+<style>
+
+/* ===== BODY & BACKGROUND ===== */
+body.gallery-page {
+  margin:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  min-height:100vh;
+  background: linear-gradient(135deg, #0f3d2e, #0b2d4a, #000814);
+  background-size: 400% 400%;
+  animation: gradientMove 20s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientMove {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+/* ===== OVERLAY ===== */
+.gallery-overlay {
+  min-height:100vh;
+  background: rgba(0,0,0,0.55);
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* ===== NAV ===== */
+nav {
+  margin-bottom: 30px;
+}
+nav a {
+  color: #ffd700;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 600;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== HEADER ===== */
+h1 {
+  margin-bottom: 20px;
+  color: #ffe066;
+  text-align: center;
+}
+
+
+/* ===== LIGHTBOX ===== */
+.lightbox {
+  display: none;
+  position: fixed;
+  top:0; left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.5);
+  margin-bottom:10px;
+}
+.lightbox p {
+  color:#fff;
+  font-size:1rem;
+  text-align:center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top:50px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top:20px;
+  font-size:0.9rem;
+  opacity:0.85;
+  text-align:center;
+}
+
+/* ===== FLOATING SOCIAL BUTTONS ===== */
+.floating-social {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.float-btn {
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  color:white;
+  font-size:24px;
+  text-decoration:none;
+  background:#444;
+  box-shadow:0 2px 10px rgba(0,0,0,0.5);
+  transition:0.3s;
+}
+.float-btn.youtube {background:#FF0000;}
+.float-btn.facebook {background:#3b5998;}
+.float-btn:hover {
+  transform: scale(1.15);
+  box-shadow:0 4px 20px rgba(255,255,255,0.6);
+}
+</style>
+</head>
+
+<body class="gallery-page">
+
+<!-- FLOATING SOCIAL BUTTONS -->
+<div class="floating-social">
+  <a href="https://www.youtube.com/@nyakabirizimiraclecentre2487" target="_blank" class="float-btn youtube" aria-label="YouTube">▶</a>
+  <a href="https://facebook.com/groups/706963367473477/" target="_blank" class="float-btn facebook" aria-label="Facebook">f</a>
+</div>
+
+<div class="gallery-overlay">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="events.html">Testimonial</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+	<a href="prayer_submit.html">Prayer Wall</a>
+  </nav>
+
+  <h1></h1
+</script>
+</section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact – Nyakabirizi Miracle Centre Church</title>
+
+<style>
+/* ===== GENERAL ===== */
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#002b40;
+  color:white;
+}
+
+/* ===== HERO ===== */
+.hero{
+  background:linear-gradient(
+    rgba(0,50,80,0.75),
+    rgba(0,0,0,0.9)
+  );
+  padding:90px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:16px;
+  opacity:0.9;
+}
+
+/* ===== SCRIPTURE BOX ===== */
+.scripture{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.2);
+  padding:18px;
+  margin:25px auto 0;
+  width:85%;
+  border-radius:10px;
+  font-style:italic;
+}
+
+/* ===== CONTACT AREA ===== */
+.contact-section{
+  padding:30px 20px;
+}
+
+.contact-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  gap:25px;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* ===== CARDS ===== */
+.card{
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:12px;
+  padding:22px;
+}
+
+.card h2{
+  margin-top:0;
+  color:#4ef7ff;
+}
+
+/* ===== FORM ===== */
+form input, form textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:8px;
+  border:none;
+  outline:none;
+  font-size:14px;
+}
+
+form textarea{
+  resize:none;
+}
+
+.btn{
+  background:#0066ff;
+  color:white;
+  border:none;
+  padding:12px;
+  width:100%;
+  border-radius:30px;
+  font-size:15px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#0047b3;
+}
+
+/* ===== INFO LINKS ===== */
+.info p{
+  margin:8px 0;
+}
+
+.action-links a{
+  display:block;
+  margin-top:12px;
+  padding:10px;
+  border-radius:25px;
+  text-align:center;
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.call{
+  background:#00b86b;
+}
+
+.map{
+  background:#ff9800;
+}
+
+.call:hover{ background:#008f50; }
+.map:hover{ background:#cc7a00; }
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  padding:18px;
+  opacity:0.7;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Contact Us</h1>
+  <p>Reach out for prayer, guidance & fellowship</p>
+
+  <div class="scripture" id="scriptureBox">
+    Loading scripture…
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- MESSAGE FORM -->
+    <div class="card">
+      <h2>Send a Message</h2>
+
+      <form action="https://formsubmit.co/nyakabirizimiraclecentre@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Message from Church Website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <input title="Real Name" type="text" name="name" placeholder="Your Name" required>
+        <input title="Personal address Required" type="email" name="email" placeholder="Your Email" required>
+        <input title="Include Country code if possible" type="tel" name="phone" placeholder="Phone Number">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button title="Church office will reply as soon as possible" class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- INFO -->
+    <div class="card info">
+      <h2>Church Information</h2>
+
+      <p title="send an email"><strong>Email:</strong><br> nyakabirizimiraclecentre@gmail.com</p>
+      <p><strong>Phone:</strong><br> +256 784 059 781</p>
+      <p><strong>Location:</strong><br> Nyakabirizi, Bushenyi – Uganda</p>
+      <p><strong>Accessibility:</strong><br> Wheelchair accessible • Parking available</p>
+
+      <div class="action-links">
+        <a class="call" href="tel:+256784059781">📞 Call Church Office</a>
+        <a class="map" 
+           href="https://www.google.com/maps?q=Nyakabirizi+Miracle+Centre+Church+Bushenyi"
+           target="_blank" rel="noopener">
+           📍 Find Us on Google Maps
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+ 
+ 
+</footer>
+
+<!-- SCRIPTURE SCRIPT -->
+<script>
+const verses = [
+  "Jeremiah 33:3 — Call unto me, and I will answer thee, and shew thee great and mighty things, which thou knowest not.",
+  "Matthew 18:20 — For where two or three are gathered together in my name, there am I in the midst of them.",
+  "Psalm 121:1 — I will lift mine eyes unto the hills, from whence cometh my help",
+  "Read Your Bible",
+  "Revelation 22:21 'KJV' The grace of our Lord Jesus Christ be with you all. Amen.",
+  "Revelation 22:14 'HCSB' Blessed are those who wash their robes, so that they may have the right to the tree of life and may enter the city by the gates.",
+  "Romans 10:13 — Everyone who calls on the name of the Lord will be saved.",
+  "Hebrews 13:18  Pray for us: for we trust we have a good conscience, in all things willing to live honestly.",
+  " Nyakabirizi Miracle Centre Church",
+  "Colossians 3:17 kjv  And whatsoever ye do in word or deed, do all in the name of the Lord Jesus, giving thanks to God and the Father by him.",
+  "Proverbs 13:2 kjv    A man shall eat good by the fruit of his mouth: but the soul of the transgressors shall eat violence.",
+  "1 Peter 5:11 KJV   To him be glory and dominion for ever and ever. Amen.",
+  "Isaiah 41:10 —    Do not fear, for I am with you; do not be afraid, for I am your God. I will strengthen you; I will help you; I will hold on to you with My righteous right hand."
+];
+
+function showVerse(){
+  document.getElementById("scriptureBox").textContent =
+    verses[Math.floor(Math.random()*verses.length)];
+}
+
+showVerse();
+setInterval(showVerse, 9000);
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit a Prayer - Nyakabirizi Miracle Centre Church</title>
+<style>
+body 
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Submit a Prayer</h1>
+  <p>Your prayer will be displayed on our Prayer Wall.</p>
+</header>
+
+<main>
+  <form 
+    action="https://formspree.io/f/mreegvvq" 
+    method="POST" 
+    enctype="multipart/form-data"
+  >
+    <!-- Hidden fields for Formspree -->
+    <input type="hidden" name="_subject" value="New Prayer Submission">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <input type="text" title="Real name" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Write your prayer here..." required></textarea>
+    <label for="profilePic">Add a profile Pic (optional)</label>
+    <input type="file" name="profilePic" id="profilePic" accept="image/*">
+    <button type="submit">Submit Prayer</button>
+  </form>
+</main>
+
+<footer>
+  © 2026 Nyakabirizi Miracle Centre Church
+Bushenyi, Uganda 
+</footer>
+
+</body>
+</html>
