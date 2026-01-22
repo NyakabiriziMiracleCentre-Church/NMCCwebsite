@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const lightbox = document.getElementById("lightbox");
 
   // ===== LOAD JSON =====
-  fetch('assets/images/gallery/gallery.json')
+  fetch('gallery.json')
     .then(res => res.json())
     .then(data => {
       data.gallery.forEach(item => {
