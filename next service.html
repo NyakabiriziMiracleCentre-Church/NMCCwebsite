@@ -173,8 +173,9 @@ footer { text-align:center; padding:20px 10px; opacity:0.8; font-size:0.9rem; ba
 <!-- HERO -->
 <header class="hero">
   <div class="overlay">
-    <h1>Next: Youth Service</h1>
-    <p>Our youth are leading all service sessions</p>
+    <h1>Next: Ladies Sunday Service </h1>
+    <p>The first of February will be a day that ladies are going to Blessus all during the church Session </p>
+    <p>Don't forget Pastor's Meeting with other Miracle Centre Church Pastors schedule for 2nd Feb at Rubaga Miracle Centre Church </p>
     <div class="countdown-card" id="nextServiceCountdown">
       Loading countdown...
     </div>
@@ -309,7 +310,7 @@ function updateEventCountdowns(){
     const distance = eventTime - now;
 
     let text;
-    if(distance <=0){ text="Event Started!"; }
+    if(distance <=0){ text="Event Ended!"; }
     else {
       const days = Math.floor(distance/(1000*60*60*24));
       const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
