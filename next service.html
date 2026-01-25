@@ -174,8 +174,10 @@ footer { text-align:center; padding:20px 10px; opacity:0.8; font-size:0.9rem; ba
 <header class="hero">
   <div class="overlay">
     <h1>Next: Ladies Sunday Service </h1>
-    <p>The first of February will be a day that ladies are going to Blessus all during the church Session </p>
-    <p>Don't forget Pastor's Meeting with other Miracle Centre Church Pastors schedule for 2nd Feb at Rubaga Miracle Centre Church </p>
+    <p>The 1st of February will be a day that ladies are going to Bless </p>
+    <p>us all during the church Session </p>
+    <p>Don't forget Pastor's Meeting with other Miracle Centre Church Pastors schedule </p>
+    <p> on 2nd Feb at Rubaga Miracle Centre Church </p>
     <div class="countdown-card" id="nextServiceCountdown">
       Loading countdown...
     </div>
@@ -241,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
     reset() {
       this.x = random(0,width);
       this.y = random(0,height);
-      this.size = random(2,6);
+      this.size = random(4,6);
       this.speedX = random(-0.3,0.3);
       this.speedY = random(0.2,1);
       this.opacity = random(0.3,0.8);
@@ -267,7 +269,7 @@ function updateCountdown(){
   const distance = nextServiceDate - now;
 
   if(distance<0){
-    countdownElement.innerHTML = "The service is happening now!";
+    countdownElement.innerHTML = "This Service is happening now!";
     return;
   }
 
@@ -286,9 +288,10 @@ setInterval(updateCountdown,1000);
 <!-- ===== EVENTS WITH COUNTDOWNS ===== -->
 <script>
 const events = [
-  { name:"Youth Sunday Service", date:"2026-01-25T09:30:00" },
-  { name:"Choir Practice", date:"2026-01-24T15:00:00" },
-  { name:"End of January Overnight", date:"2026-01-30T20:00:00" }
+  { name:"Ladies Sunday Service", date:"2026-02-01T09:30:00" },
+  { name:"Choir Practice", date:"2026-01-31T15:00:00" },
+  { name:"End of January Overnight", date:"2026-01-30T20:00:00" }, 
+  { name:"Exclusive Ladies Music Session", date:"2026-01-28T20:00:00"} 
 ];
 
 const container = document.getElementById("eventsContainer");
