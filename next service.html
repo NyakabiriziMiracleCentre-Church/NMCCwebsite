@@ -184,32 +184,31 @@ footer { text-align:center; padding:20px 10px; opacity:0.8; font-size:0.9rem; ba
   <canvas id="heroParticles"></canvas>
 </header>
 
-<!-- CALENDAR -->
-<section class="calendar-card">
-  <h2>January 2026 Services Calendar</h2>
-  <table>
+<!-- CALENDAR --><section class="calendar-card">
+  <h2>February 2026 Services Calendar</h2>
+  <table id="calendarTable">
     <tr>
       <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th>
       <th>Thu</th><th>Fri</th><th>Sat</th>
     </tr>
     <tr>
-      <td> </td><td> </td><td> </td><td> </td><td>1</td><td>2</td><td>3</td>
+      <td class="sunday">1</td><td>2</td><td>3</td><td class="highlighted">4</td><td>5</td><td>6</td><td>7</td>
     </tr>
     <tr>
-      <td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+      <td class="sunday">8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
     </tr>
     <tr>
-      <td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
+      <td class="sunday">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
     </tr>
     <tr>
-      <td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
-      <td class="special-day">24</td>
+      <td class="sunday">22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
     </tr>
     <tr>
-      <td class="service-day">25</td><td>26</td><td>27</td><td>28</td><td>29</td><td class="service-day">30</td><td>31</td>
+      <td class="sunday">29</td><td></td><td></td><td></td><td></td><td></td><td></td>
     </tr>
   </table>
 </section>
+
 
 <!-- EVENTS -->
 <div class="events-container" id="eventsContainer"></div>
@@ -242,10 +241,10 @@ document.addEventListener("DOMContentLoaded", () => {
     reset() {
       this.x = random(0,width);
       this.y = random(0,height);
-      this.size = random(4,6);
+      this.size = random(4,2);
       this.speedX = random(-0.3,0.3);
       this.speedY = random(0.2,1);
-      this.opacity = random(0.3,0.8);
+      this.opacity = random(0.9,0.9);
     }
     update(){ this.x+=this.speedX; this.y+=this.speedY; if(this.y>height)this.reset(); }
     draw(){ ctx.beginPath(); ctx.fillStyle=`rgba(173,245,255,${this.opacity})`; ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fill(); }
@@ -268,7 +267,7 @@ function updateCountdown(){
   const distance = nextServiceDate - now;
 
   if(distance<0){
-    countdownElement.innerHTML = "This Service is happening now!";
+    countdownElement.innerHTML = "These Services are happening soon!";
     return;
   }
 
@@ -287,10 +286,10 @@ setInterval(updateCountdown,1000);
 <!-- ===== EVENTS WITH COUNTDOWNS ===== -->
 <script>
 const events = [
-  { name:"Gents Sunday Service", date:"2026-02-08T09:30:00" },
+  { name:"Anointing Sunday Service", date:"2026-02-08T09:30:00" },
   { name:"Choir Practice", date:"2026-02-07T15:00:00" },
   { name:"Friday Overnight", date:"2026-02-06T20:00:00" }, 
-  { name:"Students Prayer time", date:"2026-02-05T90:00:00"} 
+  { name:"Students Prayer time", date:"2026-02-05T09:00:00"} 
 ];
 
 const container = document.getElementById("eventsContainer");
