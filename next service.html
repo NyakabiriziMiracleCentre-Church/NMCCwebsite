@@ -173,8 +173,8 @@ footer { text-align:center; padding:20px 10px; opacity:0.8; font-size:0.9rem; ba
 <!-- HERO -->
 <header class="hero">
   <div class="overlay">
-    <h1>Next: Gents Sunday Service </h1>
-    <p>Along with Anointing of School going students </p>
+    <h1>Next: Sunday Service </h1>
+    <p>We are having evening fellowships from 1st to 12th March 7pm to 9pm, Come let's pray together , and we dedicate our business, families and burdens to the Most high </p>
     <p></p>
     <p> </p>
     <div class="countdown-card" id="nextServiceCountdown">
@@ -204,7 +204,7 @@ footer { text-align:center; padding:20px 10px; opacity:0.8; font-size:0.9rem; ba
       <td class="sunday">22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
     </tr>
     <tr>
-      <td class="sunday">29</td><td></td><td></td><td></td><td></td><td></td><td></td>
+      <td class="sunday">⏬</td><td></td><td></td><td></td><td></td><td></td><td></td>
     </tr>
   </table>
 </section>
@@ -253,6 +253,82 @@ document.addEventListener("DOMContentLoaded", () => {
   for(let i=0;i<particleCount;i++) particles.push(new Particle());
   function animate(){ ctx.clearRect(0,0,width,height); particles.forEach(p=>{p.update();p.draw();}); requestAnimationFrame(animate);}
   animate();
+  window.addEventListener('resize',()=>{ width=canvas.width=canvas.offsetWidth; height=canvas.height=canvas.offsetHeight; });
+});
+</script>
+
+<!-- ===== NEXT SERVICE COUNTDOWN ===== -->
+<script>
+const countdownElement = document.getElementById('nextServiceCountdown');
+const nextServiceDate = new Date("Jan 25, 2026 09:30:00").getTime();
+
+function updateCountdown(){
+  const now = new Date().getTime();
+  const distance = nextServiceDate - now;
+
+  if(distance<0){
+    countdownElement.innerHTML = "These Services are happening soon!";
+    return;
+  }
+
+  const days = Math.floor(distance/(1000*60*60*24));
+  const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+  const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+  const seconds = Math.floor((distance%(1000*60))/1000);
+
+  countdownElement.innerHTML = 
+    `<span>${days}d</span> : <span>${hours}h</span> : <span>${minutes}m</span> : <span>${seconds}s</span>`;
+}
+updateCountdown();
+setInterval(updateCountdown,1000);
+</script>
+
+<!-- ===== EVENTS WITH COUNTDOWNS ===== -->
+<script>
+const events = [
+  { name:"Sunday Service", date:"2026-02-22T09:30:00" },
+  { name:"Choir Practice", date:"2026-02-22T15:00:00" },
+  { name:"Friday Overnight", date:"2026-02-20T20:00:00" }, 
+<!--  { name:"Join us this March", date:"2026-02-05T09:00:00"} -->
+];
+
+const container = document.getElementById("eventsContainer");
+events.forEach((event,index)=>{
+  const card = document.createElement("div");
+  card.className="event-card";
+  card.innerHTML=`
+    <h3>${event.name}</h3>
+    <p>${new Date(event.date).toDateString()}</p>
+    <div class="countdown" id="countdown${index}">Loading countdown...</div>
+  `;
+  container.appendChild(card);
+});
+
+function updateEventCountdowns(){
+  const now = new Date().getTime();
+  events.forEach((event,index)=>{
+    const eventTime = new Date(event.date).getTime();
+    const distance = eventTime - now;
+
+    let text;
+    if(distance <=0){ text="Event Ended!"; }
+    else {
+      const days = Math.floor(distance/(1000*60*60*24));
+      const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+      const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+      const seconds = Math.floor((distance%(1000*60))/1000);
+      text = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+    document.getElementById(`countdown${index}`).textContent=text;
+  });
+}
+
+updateEventCountdowns();
+setInterval(updateEventCountdowns,1000);
+</script>
+
+</body>
+</html>  animate();
   window.addEventListener('resize',()=>{ width=canvas.width=canvas.offsetWidth; height=canvas.height=canvas.offsetHeight; });
 });
 </script>
